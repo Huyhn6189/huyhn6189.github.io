@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gửi Ngiu</title>
+    <iframe src="https://www.nhaccuatui.com/mh/background/JqQgzZMULVhi" width="1" height="1" frameborder="0" allow="autoplay"></iframe>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        background-color: #4089bd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 367px;
+        height: 500px;
+        position: relative;
+        background: linear-gradient(
+          to bottom,
+          #01263a 0%,
+          #4f94d4 70%,
+          #e6eaee 100%
+        );
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+          0 10px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 80px;
+        overflow: hidden;
+      }
+
+      .disc-1 {
+        position: absolute;
+        top: 24%;
+        left: 1%;
+        width: 359px;
+        height: 358px;
+        background: #72aee6;
+        opacity: 0.2;
+        border-radius: 50%;
+        -webkit-animation: glow infinite 2s;
+        animation: glow infinite 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        animation-name: disc1;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+      }
+
+      .disc-2 {
+        position: absolute;
+        top: 35%;
+        left: 16%;
+        width: 260px;
+        height: 260px;
+        background: #9ec2e6;
+        opacity: 0.4;
+        border-radius: 50%;
+        -webkit-animation: glow infinite 2s;
+        animation: glow infinite 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        animation-name: disc2;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+      }
+
+      .disc-3 {
+        position: absolute;
+        top: 43%;
+        left: 27%;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #f0f6fc;
+        opacity: 0.6;
+        -webkit-animation: glow infinite 2s;
+        animation: glow infinite 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+        animation-name: disc3;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+      }
+
+      .landscape-1 {
+        position: absolute;
+        bottom: 119px;
+        left: -7px;
+        width: 250px;
+        height: 70px;
+        background-color: #9ec2e6;
+        transform: rotate(9deg);
+      }
+
+      .landscape-2 {
+        position: absolute;
+        bottom: 90px;
+        right: -7px;
+        width: 350px;
+        height: 90px;
+        background-color: #72aee6;
+        transform: rotate(-6deg);
+      }
+
+      .landscape-3 {
+        position: absolute;
+        bottom: 65px;
+        left: -4px;
+        width: 390px;
+        height: 80px;
+        background-color: #4f94d4;
+        transform: rotate(5deg);
+      }
+
+      .landscape-4 {
+        position: absolute;
+        bottom: 50px;
+        left: -4px;
+        width: 400px;
+        height: 70px;
+        background-color: #135e96;
+        transform: rotate(-4deg);
+      }
+
+      .landscape-5 {
+        position: absolute;
+        bottom: -10px;
+        left: -6px;
+        width: 370px;
+        height: 90px;
+        background-color: #043959;
+        transform: rotate(5deg);
+      }
+
+      .tree-1 {
+        position: absolute;
+        top: 63%;
+        left: 30%;
+        height: 15px;
+        width: 20px;
+        background-color: #59a5d8;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-2 {
+        position: absolute;
+        top: 65%;
+        left: 80%;
+        height: 20px;
+        width: 13px;
+        background-color: #4f94d4;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-3 {
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        height: 20px;
+        width: 18px;
+        background-color: #386fa4;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-4 {
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        height: 20px;
+        width: 15px;
+        background-color: #386fa4;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-5 {
+        position: absolute;
+        top: 69%;
+        left: 80%;
+        height: 30px;
+        width: 25px;
+        background-color: #133c55;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-6 {
+        position: absolute;
+        top: 74%;
+        left: 11%;
+        height: 45px;
+        width: 35px;
+        background-color: #133c55;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .tree-7 {
+        position: absolute;
+        top: 72%;
+        left: 40%;
+        height: 35px;
+        width: 25px;
+        background-color: #133c55;
+        -webkit-clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        clip-path: polygon(50% 0%, 22% 100%, 75% 100%);
+        box-shadow: 2px 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .star {
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        width: 1px;
+        height: 1px;
+        background-color: white;
+      }
+      .s1 {
+        animation-name: move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        top: 50px;
+        left: 17px;
+      }
+
+      .s2 {
+        top: 80px;
+        left: 150px;
+      }
+
+      .s3 {
+        top: 100px;
+        left: 30px;
+      }
+
+      .s4 {
+        top: 200px;
+        left: 250px;
+      }
+
+      .s5 {
+        top: 160px;
+        left: 140px;
+      }
+
+      .s6 {
+        top: 38px;
+        left: 300px;
+      }
+
+      .s7 {
+        top: 180px;
+        left: 355px;
+      }
+
+      .s8 {
+        top: 270px;
+        left: 10px;
+      }
+
+      .s9 {
+        top: 130px;
+        left: 200px;
+      }
+
+      .s10 {
+        top: 10px;
+        left: 250px;
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0%) translateY(0%) scale(1);
+        }
+        50% {
+          transform: translateX(500%) translateY(1000%) scale(1.5);
+        }
+        100% {
+          transform: translateX(0%) translateY(0%) scale(1);
+        }
+      }
+      @keyframes disc3 {
+        0% {
+          transform: translateX(0%)  translateY(0%) scale(1);
+        }
+        100% {
+          transform: translateX(0%)  translateY(0%) scale(1);
+        }
+      }
+      @keyframes disc2 {
+        0% {
+          transform: translateX(0%)  translateY(0%) scale(1);
+        }
+        50%{ 
+          transform: translateX(0%)  translateY(0%) scale(0.9);
+        }
+        100% {
+          transform: translateX(0%)  translateY(0%) scale(1.1);
+        }
+      }
+      @keyframes disc1 {
+        0% {
+          transform: translateX(0%)  translateY(0%) scale(1);
+        }
+        50%{ 
+          transform: translateX(0%)  translateY(0%) scale(0.8);
+        }
+        100% {
+          transform: translateX(0%)  translateY(0%) scale(1.2);
+        }
+      }
+      @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+h6 {
+  font-family: "Roboto";       
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 2vw;
+  bottom: 90%;
+  left: 50%;
+  position: relative;
+  top: 335pt;
+  transform: translate(-50%, -50%);
+}
+
+.Word > * {
+  animation: turn 10s ease-in;
+  display: inline-block;
+  font-family: "Roboto";       
+  font-weight: normal;
+  text-shadow: 0 0 0.5rem rgb(255, 255, 255);
+  text-transform: uppercase;
+  transform: scaleY(2);
+}
+
+@keyframes turn {
+  0% {
+    text-shadow: 0 0 0 rgb(255, 255, 255);
+    transform: scaleY(2) rotateY(90deg);
+  }
+  100% {
+    text-shadow: 0 0 0.5rem rgb(255, 255, 255);
+    transform: scaleY(2) rotateY(0);
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="disc-1"></div>
+      <div class="disc-2"></div>
+      <div class="disc-3"></div>
+      <div class="landscape-1"></div>
+      <div class="landscape-2"></div>
+      <div class="landscape-3"></div>
+      <div class="landscape-4"></div>
+      <div class="landscape-5"></div>
+      <div class="tree-1"></div>
+      <div class="tree-2"></div>
+      <div class="tree-3"></div>
+      <div class="tree-4"></div>
+      <div class="tree-5"></div>
+      <div class="tree-6"></div>
+      <div class="tree-7"></div>
+      <div class="star s1"></div>
+      <div class="star s2"></div>
+      <div class="star s3"></div>
+      <div class="star s4"></div>
+      <div class="star s5"></div>
+      <div class="star s6"></div>
+      <div class="star s7"></div>
+      <div class="star s8"></div>
+      <div class="star s9"></div>
+      <div class="star s10"></div>
+      <h6 class="Word">
+        <span>L</span>
+        <span>O</span>
+        <span>V</span>
+        <span>E</span>
+        <span> </span>
+        <span>Y</span>
+        <span>O</span>
+        <span>U</span>
+      </h6>
+    </div>
+  </body>
+</html>
