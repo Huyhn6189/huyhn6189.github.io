@@ -13,13 +13,11 @@ const texts = [
 "Wanna",
 "Tell",
 "You:",
-"I",
-"love",
-"You"];
+"I Love You",];
 
 // Controls the speed of morphing.
 const morphTime = 1;
-const cooldownTime = 0.25;
+const cooldownTime = 0.75;
 
 let textIndex = texts.length - 1;
 let time = new Date();
@@ -74,12 +72,12 @@ function animate() {
 
   let newTime = new Date();
   let shouldIncrementIndex = cooldown > 0;
-  let dt = (newTime - time) / 1000;
+  let dt = (newTime - time) / 1500;
   time = newTime;
 
   cooldown -= dt;
 
-  if (cooldown <= 0) {
+  if (cooldown <= -0) {
     if (shouldIncrementIndex) {
       textIndex++;
     }
