@@ -27,12 +27,12 @@ var mousePos = { x:0, y:0 };
 
 var fov = 250;
 
-var speed = 0.75;//0.25;
+var speed = 0.25;//0.25;
 
 var cubeMinHeight = 2;
 
 var frequencyDamp = 25;
-var smoothingTimeConstant = 0.65;
+var smoothingTimeConstant = 0.75;
 var fftSize = 8192;//32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768
 
 var circleHolder = [];
@@ -51,29 +51,14 @@ var rgb2 = {};
     rgb2.g = Math.random() * MATHPI2;
     rgb2.b = Math.random() * MATHPI2;
 
-//---
-/*
-function getRGBColor() {
-
-  var r = Math.sin( rgb.r += 0.010 ) * 1 + 1;
-  var g = Math.sin( rgb.g += 0.007 ) * 1 + 1;
-  var b = Math.sin( rgb.b += 0.013 ) * 1 + 1;
-  //var r = Math.sin( rgb.r += 0.040 ) * 1 + 1;
-  //var g = Math.sin( rgb.g += 0.028 ) * 1 + 1;
-  //var b = Math.sin( rgb.b += 0.052 ) * 1 + 1;
-
-  return { r:r, g:g, b:b };
-
-};*/
-
 function getRGBColor( color ) {
 
   var r = Math.sin( color.r += 0.010 ) * 1 + 1;
   var g = Math.sin( color.g += 0.007 ) * 1 + 1;
   var b = Math.sin( color.b += 0.013 ) * 1 + 1;
-  //var r = Math.sin( color.r += 0.040 ) * 1 + 1;
-  //var g = Math.sin( color.g += 0.028 ) * 1 + 1;
-  //var b = Math.sin( color.b += 0.052 ) * 1 + 1;
+  var r = Math.sin( color.r += 0.040 ) * 1 + 1;
+  var g = Math.sin( color.g += 0.028 ) * 1 + 1;
+  var b = Math.sin( color.b += 0.052 ) * 1 + 1;
 
   return { r:r, g:g, b:b };
 
@@ -81,9 +66,9 @@ function getRGBColor( color ) {
 
 function getRGBColor2( color ) {
 
-  //var r = Math.sin( color.r += 0.010 ) * 1 + 1;
-  //var g = Math.sin( color.g += 0.007 ) * 1 + 1;
-  //var b = Math.sin( color.b += 0.013 ) * 1 + 1;
+  var r = Math.sin( color.r += 0.010 ) * 1 + 1;
+  var g = Math.sin( color.g += 0.007 ) * 1 + 1;
+  var b = Math.sin( color.b += 0.013 ) * 1 + 1;
   var r = Math.sin( color.r += 0.040 ) * 1 + 1;
   var g = Math.sin( color.g += 0.028 ) * 1 + 1;
   var b = Math.sin( color.b += 0.052 ) * 1 + 1;
