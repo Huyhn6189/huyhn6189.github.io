@@ -1,8 +1,3 @@
-/*
-Song: LAKEY INSPIRED - Chill Day (Vlog No Copyright Music) Music provided by Vlog No Copyright Music. Video Link: https://youtu.be/vtHGESuQ22s
-*/
-//---
-
 var audio, audioContext, audioSrc;
 var analyser, analyserBufferLength;
 var audioInfo = 'Song: LAKEY INSPIRED - Chill Day';
@@ -182,9 +177,7 @@ function userStart() {
 function audioSetup( url ) {
 
   if ( audio ) {
-  
     audio.pause();
-  
   }
 
   audio = new Audio();
