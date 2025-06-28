@@ -1,15 +1,16 @@
 const textConfig = {
-  text1: "Hế luu Tú àaaaaaa",
-  text2: "bạn đã sẵn sàng tham gia mini quest chưaaaaaa",
-  text3: "Bạn hết dỗi chưa nèeeeeee ?",
-  text4: "Bạn không trả lời mà thoát ra là hết dỗi rồi nhéeeeeeeeeeee",
-  text5: "Còn lâu ...",
-  text6: "Hết ròi nè <3",
-  text7: "Nói lí do em thích anh đi :vvvv",
-  text8: "Gửi cho anh <3",
-  text10: "Anh biết mà ^^",
+  text1: "Hế luu Tú àaaaaaaa!",
+  text2: "Bạn đã sẵn sàng tham gia mini test chưa ????",
+  text3: "Bạn hết dỗi chưa nèeeee",
+  text4: "Nếu không trả lời mà thoát ra là hết dỗi rồi nhéeeeee",
+  text5: "Mơ à????",
+  text6: "Hết dỗi rồi nè <3",
+  text7: "Đúng là Cá thể TO ưu Tú mà. Bạn có muốn nói gì không nè?",
+  text8: "Send it <3",
+  text9: "Cần trà sữa để chữa lành",
+  text10: "Mình biết mà ^^",
   text11:
-    "Tối nay anh qua đón em đi chơi nhaa :v",
+    "Mai mua trà sữa cho nhá :v",
   text12: "Okii lunn <3",
 };
 
@@ -113,7 +114,7 @@ $(document).ready(function () {
       html: true,
       width: 900,
       padding: "3em",
-      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
+      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Viết gì đó đii'>",
       background: '#fff url("img/iput-bg.jpg")',
       backdrop: `
                     rgba(0,0,123,0.4)
