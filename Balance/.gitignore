@@ -8,8 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-#Ẩn đi để commit dist để chạy
-#dist
+dist
 dist-ssr
 *.local
 
