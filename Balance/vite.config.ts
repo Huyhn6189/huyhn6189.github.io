@@ -13,6 +13,6 @@ export default defineConfig(() => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-    base: './',
+    base: './', // Rất quan trọng để chạy trực tiếp trên dist
   },
 }));
