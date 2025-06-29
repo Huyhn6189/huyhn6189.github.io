@@ -15,8 +15,4 @@ export default defineConfig(() => ({
       base: '/Balance/'
     },
   },
-  base: '/huyhn6189.github.io/BalanceApp/', // Thay 'repo-name' bằng tên repo của bạn
-  build: {
-    outDir: 'dist/BalanceApp', // Xuất build vào thư mục con
-  }
 }));
