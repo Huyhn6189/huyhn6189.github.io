@@ -14,5 +14,5 @@ export default defineConfig(() => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/huyhn6189.github.io/',
+  base: './',
 }));
