@@ -1,11 +1,11 @@
 const textConfig = {
-  text1: "Hế luu Tú àaaaaaaa!",
+  text1: "Hế luu bạn àaaaaaaa!",
   text2: "Bạn đã sẵn sàng tham gia mini test chưa ????",
   text3: "Bạn hết dỗi chưa nèeeee",
   text4: "Nếu không trả lời mà thoát ra là hết dỗi rồi nhéeeeee",
   text5: "Mơ à????",
   text6: "Hết dỗi rồi nè <3",
-  text7: "Đúng là Cá thể TO ưu Tú mà. Bạn có muốn nói gì không nè?",
+  text7: "Đúng tuyệt vời mà. Bạn có muốn nói gì không nè?",
   text8: "Send it <3",
   text9: "Cần trà sữa để chữa lành",
   text10: "Mình biết mà ^^",
